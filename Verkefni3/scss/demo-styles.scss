@@ -45,10 +45,20 @@ nav {
   border-style: solid;
   border-width: 5px;
 }
-.h1Hover {
+@mixin transition($transition...) {
+    transition:         $transition;
+}
+.aHover {
   color: black;
+  display: inline-block;
   padding: 10px;
+  font-size: 3em;
   text-decoration: none;
-  font
-  @include transition(color 2s);
+  background-color: orange;
+  border-radius: 4px;
+  @include transition(background-color 1s, color 1s);
+}
+.aHover:hover {
+   color: white; 
+  background-color: black;
 }
