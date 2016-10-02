@@ -1,6 +1,6 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: gray;
-$boxWidth: 10em;
+$boxWidth: 20em;
 
 body {
   font: 100% $font-stack;
@@ -12,25 +12,30 @@ nav {
     padding: 0;
     list-style: none;
       width: 100%;
+    margin-bottom: 2em;
   }
 
   li { 
       display: inline-block;
       color: black;
       font-size: 2em;
+    transition: .5s;
     }
     li:hover{
         color: white;
+      transition: .5s;
     }
 
   a {
     display: inline-block;
     padding: 6px 12px;
     text-decoration: none;
-      
+      background-color: aqua;
+    transition: 1s;
   }
     a:hover{
-        background-color: aqua;
+        background-color: orange;
+      transition: 1s;
     }
 }
 @mixin border-radius($radius) {
