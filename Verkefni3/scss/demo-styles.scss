@@ -6,6 +6,20 @@ body {
   font: 100% $font-stack;
   background-color: $primary-color;
 }
+.change{
+  animation: pulse 20s infinite;
+}
+@keyframes pulse {
+  0% {color: black; font-size: 2em;}
+  10% {color: blue;}
+  20% {color: red;}
+  30% {color: green;}
+  40% {color: yellow;}
+  50% {color: orange; font-size: 4em;}
+  60% {color: purple;}
+  70% {color: white;}
+  100% {color: black; font-size: 2em;}
+}
 nav {
   ul {
     margin: 0;
@@ -31,6 +45,7 @@ nav {
     padding: 6px 12px;
     text-decoration: none;
       background-color: aqua;
+    border-radius: 20px;
     transition: 1s;
   }
     a:hover{
