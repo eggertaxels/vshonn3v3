@@ -1,5 +1,6 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: gray;
+$boxWidth: 20em;
 
 body {
   font: 100% $font-stack;
@@ -31,4 +32,16 @@ nav {
     a:hover{
         background-color: aqua;
     }
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+.box {
+  width: $boxWidth;
+  @include border-radius(10px);
+  border-style: solid;
+  border-width: 5px;
 }
